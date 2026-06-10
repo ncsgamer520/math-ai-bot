@@ -1,3 +1,4 @@
+import os
 import flet as ft
 
 def main(page: ft.Page):
@@ -104,4 +105,5 @@ def main(page: ft.Page):
 
     page.add(ft.Column([gate_container, main_menu, content_area], alignment=ft.MainAxisAlignment.CENTER))
 
-ft.app(target=main, view=ft.AppView.WEB_BROWSER)
+if __name__ == "__main__":
+    ft.app(target=main, port=int(os.environ.get("PORT", 8080)))
