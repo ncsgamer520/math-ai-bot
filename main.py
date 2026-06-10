@@ -107,3 +107,7 @@ def main(page: ft.Page):
 
 if __name__ == "__main__":
     ft.app(target=main, port=int(os.environ.get("PORT", 8080)))
+
+git add .
+git commit -m "Update for cloud deployment"
+git push
