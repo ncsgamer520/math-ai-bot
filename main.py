@@ -7,6 +7,8 @@ def main(page: ft.Page):
     page.theme_mode = ft.ThemeMode.DARK
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
+    page.loading_screen = True
+page.update()
     
     page.decoration = ft.BoxDecoration(
         image=ft.DecorationImage(
