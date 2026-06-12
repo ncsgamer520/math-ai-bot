@@ -7,16 +7,19 @@ def main(page: ft.Page):
     page.theme_mode = ft.ThemeMode.DARK
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
-    page.loading_screen = True
-page.update()
     
+    # Corrected indentation and structure for loading screen
+    page.loading_screen = True
+    page.update()
+    
+    # Corrected indentation and closing brackets
     page.decoration = ft.BoxDecoration(
         image=ft.DecorationImage(
             src="https://images.alphacoders.com/109/1094054.jpg",
             fit="cover",
         )
     )
-
+    
     SENS_DATA = {
         "Infinix": ["Note 7", "Note 8", "Note 10", "Note 11", "Note 12", "Note 30", "Note 40", "Hot 9", "Hot 10", "Hot 11", "Hot 12", "Hot 20", "Hot 30", "Hot 40", "Smart 5", "Smart 6", "Smart 7", "Smart 8", "Zero 8", "Zero 30", "GT 10 Pro", "GT 20 Pro", "Note 50", "Hot 50", "Zero 40"],
         "TECNO": ["Spark 5", "Spark 6", "Spark 7", "Spark 8", "Spark 9", "Spark 10", "Spark 20", "Spark 30", "Pova", "Pova 2", "Pova 3", "Pova 4", "Pova 5", "Pova 6", "Camon 15", "Camon 16", "Camon 17", "Camon 18", "Camon 19", "Camon 20", "Camon 30", "Phantom X", "Phantom V", "Spark 40", "Pova 7"],
