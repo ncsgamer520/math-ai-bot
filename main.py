@@ -106,8 +106,7 @@ def main(page: ft.Page):
     page.add(ft.Column([gate_container, main_menu, content_area], alignment=ft.MainAxisAlignment.CENTER))
 
 if __name__ == "__main__":
-    ft.app(target=main, port=int(os.environ.get("PORT", 8080)))
-
-git add .
-git commit -m "Update for cloud deployment"
-git push
+    import os
+    os.environ["FLET_FORCE_WEB_SERVER"] = "true"
+    port = int(os.environ.get("PORT", 10000))
+    ft.app(target=main, port=port)
